@@ -30,7 +30,7 @@ $(document).ready(function () {
         crystals = [ getRandomArbitrary(1, 12),  getRandomArbitrary(1, 12),  getRandomArbitrary(1, 12),  getRandomArbitrary(1, 12)]; */
 
         console.log(crystals);
-
+        $("#totalScore").text(totalScore);
         $("#randomNumber").text(randomNumber);
     }
     

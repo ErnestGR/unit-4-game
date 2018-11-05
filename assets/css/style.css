@@ -64,12 +64,12 @@ h3{
     height: 100px;
     margin-bottom: 80px;
     }
-    @media screen and (max-width: 640px){
+    @media only screen and (min-device-width : 360px) and (max-device-width : 640px){
         body {
-            float:none; width: 80%;
+            float:none; width: 100%;
         }
         #container {
-            float: left; width: 100%; position: static;
+            float: left; width: 50%; position: static;
         }
         #random {
             float: left; width: 100%; position: static;
@@ -79,5 +79,8 @@ h3{
         }
         .buttons {
             float: left; width: 100%; position: static;
+        }
+        .image {
+            float: left; width: 50%; position: static;
         }
     }

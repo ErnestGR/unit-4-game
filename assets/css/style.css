@@ -1,12 +1,20 @@
 body{
-background-color: #5cdb95;
+background:
+    -webkit-radial-gradient(#edf5e1 15%, transparent 16%),
+    -webkit-radial-gradient(#edf5e1 15%, transparent 16%),
+    #5cdb95;
+background-position: 0 0, 10px 10px;
+-webkit-background-size: 20px 20px;
+-moz-background-size: 20px 20px;
+background-size: 5px 5px;
 color: #edf5e1;
 font-family: Arial, Helvetica, sans-serif;
 }
 h1{
 font-size: 60px;
 font-weight: bold;
-color:#05386b;
+color:#edf5e1;
+text-shadow: 2px 2px #05386b;
 }
 #container{
 padding: 20px;
@@ -14,10 +22,15 @@ text-align: center;
 width: 960px;
 margin: 0 auto;
 }
+h3{
+    font-size: 15px;
+    color: #05386b;
+}
     #random{
     float: left;
     margin-top: 10px;
     margin-bottom: 20px;
+    border-radius: 15px;
     background-color: #05386b;
     text-align: center;
     width: 48%;
@@ -27,6 +40,7 @@ margin: 0 auto;
     float: right;
     margin-top: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
     background-color: #05386b;
     text-align: center;
     width: 48%;
@@ -34,6 +48,7 @@ margin: 0 auto;
     }
     .image{
     float: left;
+    border-radius: 5px;
     background-color: #05386b;
     text-align: center;
     margin: 20px;
@@ -42,9 +57,27 @@ margin: 0 auto;
     #finalScore{
     float: left;
     width: 100%;
+    border-radius: 10px;
     background-color: #05386b;
     text-align: center;
     width: 100%;
     height: 100px;
     margin-bottom: 80px;
+    }
+    @media screen and (max-width: 640px){
+        body {
+            float:none; width: 80%;
+        }
+        #container {
+            float: left; width: 100%; position: static;
+        }
+        #random {
+            float: left; width: 100%; position: static;
+        }
+        #scores {
+            float: left; width: 100%; position: static;
+        }
+        .buttons {
+            float: left; width: 100%; position: static;
+        }
     }
